@@ -1,0 +1,3 @@
+[console_scripts]
+lane_controller = super_lane_pkg.lane_controller:main
+lane_detector = super_lane_pkg.lane_detector:main

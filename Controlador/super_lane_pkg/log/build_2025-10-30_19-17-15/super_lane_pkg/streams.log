@@ -1,0 +1,41 @@
+[0.549s] Invoking command in '/home/hugo/ros2_ws/src/super_lane_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/super_lane_pkg build --build-base /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build install --record /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/install.log --single-version-externally-managed install_data
+[0.694s] running egg_info
+[0.694s] creating build/super_lane_pkg/super_lane_pkg.egg-info
+[0.703s] writing build/super_lane_pkg/super_lane_pkg.egg-info/PKG-INFO
+[0.704s] writing dependency_links to build/super_lane_pkg/super_lane_pkg.egg-info/dependency_links.txt
+[0.705s] writing entry points to build/super_lane_pkg/super_lane_pkg.egg-info/entry_points.txt
+[0.705s] writing requirements to build/super_lane_pkg/super_lane_pkg.egg-info/requires.txt
+[0.705s] writing top-level names to build/super_lane_pkg/super_lane_pkg.egg-info/top_level.txt
+[0.705s] writing manifest file 'build/super_lane_pkg/super_lane_pkg.egg-info/SOURCES.txt'
+[0.727s] reading manifest file 'build/super_lane_pkg/super_lane_pkg.egg-info/SOURCES.txt'
+[0.728s] writing manifest file 'build/super_lane_pkg/super_lane_pkg.egg-info/SOURCES.txt'
+[0.728s] running build
+[0.728s] running build_py
+[0.728s] creating /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build
+[0.729s] creating /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib
+[0.729s] creating /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg
+[0.729s] copying super_lane_pkg/__init__.py -> /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg
+[0.729s] copying super_lane_pkg/lane_controller.py -> /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg
+[0.729s] copying super_lane_pkg/lane_detector.py -> /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg
+[0.729s] running install
+[0.734s] running install_lib
+[0.746s] creating /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg
+[0.746s] copying /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg/__init__.py -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg
+[0.746s] copying /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg/lane_controller.py -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg
+[0.746s] copying /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg/lane_detector.py -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg
+[0.746s] byte-compiling /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/__init__.py to __init__.cpython-312.pyc
+[0.746s] byte-compiling /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/lane_controller.py to lane_controller.cpython-312.pyc
+[0.747s] byte-compiling /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/lane_detector.py to lane_detector.cpython-312.pyc
+[0.747s] running install_data
+[0.747s] creating /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/ament_index
+[0.747s] creating /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/ament_index/resource_index
+[0.747s] creating /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/ament_index/resource_index/packages
+[0.747s] copying resource/super_lane_pkg -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/ament_index/resource_index/packages
+[0.747s] copying package.xml -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/super_lane_pkg
+[0.747s] running install_egg_info
+[0.759s] Copying build/super_lane_pkg/super_lane_pkg.egg-info to /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg-0.0.0-py3.12.egg-info
+[0.759s] running install_scripts
+[0.847s] Installing lane_controller script to /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/super_lane_pkg
+[0.848s] Installing lane_detector script to /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/super_lane_pkg
+[0.848s] writing list of installed files to '/home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/install.log'
+[0.875s] Invoked command in '/home/hugo/ros2_ws/src/super_lane_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/super_lane_pkg build --build-base /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build install --record /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/install.log --single-version-externally-managed install_data

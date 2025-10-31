@@ -1,0 +1,39 @@
+running egg_info
+creating build/super_lane_pkg/super_lane_pkg.egg-info
+writing build/super_lane_pkg/super_lane_pkg.egg-info/PKG-INFO
+writing dependency_links to build/super_lane_pkg/super_lane_pkg.egg-info/dependency_links.txt
+writing entry points to build/super_lane_pkg/super_lane_pkg.egg-info/entry_points.txt
+writing requirements to build/super_lane_pkg/super_lane_pkg.egg-info/requires.txt
+writing top-level names to build/super_lane_pkg/super_lane_pkg.egg-info/top_level.txt
+writing manifest file 'build/super_lane_pkg/super_lane_pkg.egg-info/SOURCES.txt'
+reading manifest file 'build/super_lane_pkg/super_lane_pkg.egg-info/SOURCES.txt'
+writing manifest file 'build/super_lane_pkg/super_lane_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build
+creating /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib
+creating /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg
+copying super_lane_pkg/__init__.py -> /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg
+copying super_lane_pkg/lane_controller.py -> /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg
+copying super_lane_pkg/lane_detector.py -> /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg
+running install
+running install_lib
+creating /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg
+copying /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg/__init__.py -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg
+copying /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg/lane_controller.py -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg
+copying /home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/build/lib/super_lane_pkg/lane_detector.py -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg
+byte-compiling /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/lane_controller.py to lane_controller.cpython-312.pyc
+byte-compiling /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/lane_detector.py to lane_detector.cpython-312.pyc
+running install_data
+creating /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/ament_index
+creating /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/ament_index/resource_index
+creating /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/ament_index/resource_index/packages
+copying resource/super_lane_pkg -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/share/super_lane_pkg
+running install_egg_info
+Copying build/super_lane_pkg/super_lane_pkg.egg-info to /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing lane_controller script to /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/super_lane_pkg
+Installing lane_detector script to /home/hugo/ros2_ws/src/super_lane_pkg/install/super_lane_pkg/lib/super_lane_pkg
+writing list of installed files to '/home/hugo/ros2_ws/src/super_lane_pkg/build/super_lane_pkg/install.log'
