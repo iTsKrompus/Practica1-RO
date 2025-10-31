@@ -16,7 +16,7 @@ class LaneDetector(Node):
 
     def image_callback(self, msg):
         img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
-        column_means = np.mean(img, axis=(0, 1))  # (512,)
+        column_means = np.mean(img, axis=(0, 2))  # (512,)
         center_index = np.argmax(column_means)
         error = center_index - 256
         self.get_logger().info(f'Error de carril: {error}')

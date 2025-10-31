@@ -27,6 +27,7 @@ def generate_launch_description():
             {
                 'robot_description': robot_description_path,
                 'camera_names': ['road_camera'],
+                'always_on_camera': True
             }
         ]
     )
