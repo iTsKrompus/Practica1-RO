@@ -11,6 +11,9 @@ setup(
             ['resource/' + package_name]), 
             ('share/super_lane_pkg/launch', ['launch/super_lane.launch.py']),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/resource', ['resource/CitroenCZero.urdf']),
+        ('share/' + package_name + '/worlds', ['worlds/city_traffic.wbt']),
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,
