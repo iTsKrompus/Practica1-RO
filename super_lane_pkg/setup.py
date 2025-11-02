@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'super_lane_pkg'
 
@@ -13,6 +15,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/resource', ['resource/CitroenCZero.urdf']),
         ('share/' + package_name + '/worlds', ['worlds/city_traffic.wbt']),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
+        (os.path.join('share', package_name, 'templates'), glob('templates/*.png')),
 
     ],
     install_requires=['setuptools'],
