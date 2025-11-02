@@ -48,11 +48,19 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Nodo de percepción de señales
+    lane_detector = Node(
+        package='super_lane_pkg',
+        executable='signal_det',
+        name='signal_det',
+        output='screen'
+    )
     return LaunchDescription([
         webots,
         car_driver,
         lane_detector,
         lane_controller,
+        signal_det,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

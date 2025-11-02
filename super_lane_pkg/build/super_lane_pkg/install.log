@@ -1,8 +1,10 @@
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/__init__.py
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/lane_controller.py
+/home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/signal_det.py
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/lane_detector.py
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/__pycache__/__init__.cpython-312.pyc
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/__pycache__/lane_controller.cpython-312.pyc
+/home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/__pycache__/signal_det.cpython-312.pyc
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg/__pycache__/lane_detector.cpython-312.pyc
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/share/ament_index/resource_index/packages/super_lane_pkg
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/share/super_lane_pkg/launch/super_lane.launch.py
@@ -18,3 +20,4 @@
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg-0.0.0-py3.12.egg-info/zip-safe
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/super_lane_pkg/lane_controller
 /home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/super_lane_pkg/lane_detector
+/home/hugo/Documentos/RO/Practica1-RO/super_lane_pkg/install/super_lane_pkg/lib/super_lane_pkg/signal_det

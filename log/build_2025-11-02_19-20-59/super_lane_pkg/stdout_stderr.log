@@ -1,0 +1,22 @@
+running egg_info
+writing ../build/super_lane_pkg/super_lane_pkg.egg-info/PKG-INFO
+writing dependency_links to ../build/super_lane_pkg/super_lane_pkg.egg-info/dependency_links.txt
+writing entry points to ../build/super_lane_pkg/super_lane_pkg.egg-info/entry_points.txt
+writing requirements to ../build/super_lane_pkg/super_lane_pkg.egg-info/requires.txt
+writing top-level names to ../build/super_lane_pkg/super_lane_pkg.egg-info/top_level.txt
+reading manifest file '../build/super_lane_pkg/super_lane_pkg.egg-info/SOURCES.txt'
+writing manifest file '../build/super_lane_pkg/super_lane_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/super_lane.launch.py -> /home/hugo/Documentos/RO/Practica1-RO/install/super_lane_pkg/share/super_lane_pkg/launch
+running install_egg_info
+removing '/home/hugo/Documentos/RO/Practica1-RO/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../build/super_lane_pkg/super_lane_pkg.egg-info to /home/hugo/Documentos/RO/Practica1-RO/install/super_lane_pkg/lib/python3.12/site-packages/super_lane_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing lane_controller script to /home/hugo/Documentos/RO/Practica1-RO/install/super_lane_pkg/lib/super_lane_pkg
+Installing lane_detector script to /home/hugo/Documentos/RO/Practica1-RO/install/super_lane_pkg/lib/super_lane_pkg
+Installing signal_det script to /home/hugo/Documentos/RO/Practica1-RO/install/super_lane_pkg/lib/super_lane_pkg
+writing list of installed files to '/home/hugo/Documentos/RO/Practica1-RO/build/super_lane_pkg/install.log'

@@ -1,0 +1,36 @@
+running egg_info
+creating ../build/signal_det_pkg/signal_det_pkg.egg-info
+writing ../build/signal_det_pkg/signal_det_pkg.egg-info/PKG-INFO
+writing dependency_links to ../build/signal_det_pkg/signal_det_pkg.egg-info/dependency_links.txt
+writing entry points to ../build/signal_det_pkg/signal_det_pkg.egg-info/entry_points.txt
+writing requirements to ../build/signal_det_pkg/signal_det_pkg.egg-info/requires.txt
+writing top-level names to ../build/signal_det_pkg/signal_det_pkg.egg-info/top_level.txt
+writing manifest file '../build/signal_det_pkg/signal_det_pkg.egg-info/SOURCES.txt'
+reading manifest file '../build/signal_det_pkg/signal_det_pkg.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/signal_det_pkg/signal_det_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hugo/Documentos/RO/Practica1-RO/build/signal_det_pkg/build
+creating /home/hugo/Documentos/RO/Practica1-RO/build/signal_det_pkg/build/lib
+creating /home/hugo/Documentos/RO/Practica1-RO/build/signal_det_pkg/build/lib/signal_det_pkg
+copying signal_det_pkg/__init__.py -> /home/hugo/Documentos/RO/Practica1-RO/build/signal_det_pkg/build/lib/signal_det_pkg
+copying signal_det_pkg/signal_det.py -> /home/hugo/Documentos/RO/Practica1-RO/build/signal_det_pkg/build/lib/signal_det_pkg
+running install
+running install_lib
+creating /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/lib/python3.12/site-packages/signal_det_pkg
+copying /home/hugo/Documentos/RO/Practica1-RO/build/signal_det_pkg/build/lib/signal_det_pkg/__init__.py -> /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/lib/python3.12/site-packages/signal_det_pkg
+copying /home/hugo/Documentos/RO/Practica1-RO/build/signal_det_pkg/build/lib/signal_det_pkg/signal_det.py -> /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/lib/python3.12/site-packages/signal_det_pkg
+byte-compiling /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/lib/python3.12/site-packages/signal_det_pkg/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/lib/python3.12/site-packages/signal_det_pkg/signal_det.py to signal_det.cpython-312.pyc
+running install_data
+creating /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/share/ament_index
+creating /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/share/ament_index/resource_index
+creating /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/share/ament_index/resource_index/packages
+copying resource/signal_det_pkg -> /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/share/signal_det_pkg
+running install_egg_info
+Copying ../build/signal_det_pkg/signal_det_pkg.egg-info to /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/lib/python3.12/site-packages/signal_det_pkg-0.0.0-py3.12.egg-info
+running install_scripts
+Installing signal_det script to /home/hugo/Documentos/RO/Practica1-RO/install/signal_det_pkg/lib/signal_det_pkg
+writing list of installed files to '/home/hugo/Documentos/RO/Practica1-RO/build/signal_det_pkg/install.log'

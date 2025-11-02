@@ -1,0 +1,2 @@
+[console_scripts]
+signal_det = signal_det_pkg.signal_det:main

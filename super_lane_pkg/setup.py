@@ -30,6 +30,7 @@ setup(
     'console_scripts': [
         'lane_detector = super_lane_pkg.lane_detector:main',
         'lane_controller = super_lane_pkg.lane_controller:main',
+        'signal_det = super_lane_pkg.signal_det:main',
     ],
     
 },
