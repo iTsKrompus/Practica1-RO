@@ -21,7 +21,7 @@ def generate_launch_description():
     )
 
     # Controlador del coche
-    car_driver = WebotsController(
+    my_robot_driver = WebotsController(
         robot_name='car',  # Asegúrate de que el robot en Webots se llama "car"
         parameters=[
             {
@@ -57,7 +57,7 @@ def generate_launch_description():
     )
     return LaunchDescription([
         webots,
-        car_driver,
+        my_robot_driver,
         lane_detector,
         lane_controller,
         signal_det,
