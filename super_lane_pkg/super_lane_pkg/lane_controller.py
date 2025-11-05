@@ -8,7 +8,7 @@ class LaneController(Node):
     def __init__(self):
         super().__init__('lane_controller')
         self.subscription = self.create_subscription(Int32, '/lane_error', self.error_callback, 10)
-        self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 1)
+        self.cmd_pub = self.create_publisher(Twist, 'cmd_vel', 10)
         self.Kp = 0.01  # Ganancia proporcional
 
     def error_callback(self, msg):

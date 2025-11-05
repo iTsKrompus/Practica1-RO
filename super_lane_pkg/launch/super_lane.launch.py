@@ -40,6 +40,8 @@ def generate_launch_description():
         output='screen'
     )
 
+
+
     # Nodo de control
     lane_controller = Node(
         package='super_lane_pkg',
