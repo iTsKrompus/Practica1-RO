@@ -30,17 +30,14 @@ setup(
             'pytest',
         ],
     },
-    entry_points={
-    'console_scripts': [
-        'my_robot_driver = super_lane_pkg.my_robot_driver:main',
-        'lane_detector = super_lane_pkg.lane_detector:main',
-        'lane_controller = super_lane_pkg.lane_controller:main',
-        'signal_det = super_lane_pkg.signal_det:main',
-        
-    ],
     
-},
-
-
-
+    entry_points={
+        'console_scripts': [
+            
+            'my_robot_driver = super_lane_pkg.my_robot_driver:main', 
+            'lane_detector = super_lane_pkg.lane_detector:main',
+            'lane_controller = super_lane_pkg.lane_controller:main',
+            'signal_det = super_lane_pkg.signal_det:main',
+        ],
+    },
 )

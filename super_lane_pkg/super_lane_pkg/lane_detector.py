@@ -45,7 +45,7 @@ class LaneDetector(Node):
         center_index = int(np.argmax(column_means))    # <-- convertir a int Python nativo
         error = int(center_index - 256)                # <-- int Python nativo
 
-        self.get_logger().info(f'Centro detectado: {center_index}, Error de carril: {error}')
+         #self.get_logger().info(f'Centro detectado: {center_index}, Error de carril: {error}')
         self.error_pub.publish(Int32(data=error))
 
 def main(args=None):

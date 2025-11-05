@@ -20,7 +20,7 @@ class LaneController(Node):
         twist.angular.z = angular
 
         self.cmd_pub.publish(twist)
-        self.get_logger().info(f'Controlando: error={error}, giro={angular:.2f}')
+        #self.get_logger().info(f'Controlando: error={error}, giro={angular:.2f}')
 def main(args=None):
     rclpy.init(args=args)
     node = LaneController()

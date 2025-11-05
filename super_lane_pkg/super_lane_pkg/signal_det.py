@@ -110,7 +110,7 @@ class SignDetector(Node):
         if detection_made and not self.detection_image_saved:
             try:
                 cv2.imwrite(self.det_path, frame)
-                self.get_logger().warn(f'¡Imagen con detección guardada en: {self.detection_save_path}!')
+                self.get_logger().warn(f'¡Imagen con detección guardada en: {self.det_path}!')
                 self.detection_image_saved = True # Ponemos el flag a True
             except Exception as e:
                 self.get_logger().error(f'No se pudo guardar la imagen de detección: {e}')     
@@ -128,7 +128,7 @@ def main(args=None):
     finally:
         if node.last_cv_image is not None:
             try:
-                cv2.imwrite(node.last_cv_image)
+                cv2.imwrite(node.save_path, node.last_cv_image)
             except Exception as e:
                 node.get_logger().error(f'No se puedo guardar la ultima imagen: {e}')
 

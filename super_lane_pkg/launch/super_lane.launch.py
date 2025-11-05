@@ -20,15 +20,12 @@ def generate_launch_description():
         world=world_path
     )
 
-    # Controlador del coche
+
     my_robot_driver = WebotsController(
-        robot_name='car',  # Asegúrate de que el robot en Webots se llama "car"
+        robot_name='car',
+
         parameters=[
-            {
-                'robot_description': robot_description_path,
-                'camera_names': ['road_camera'],
-                'always_on_camera': True
-            }
+            {'robot_description': robot_description_path},
         ]
     )
 
