@@ -51,10 +51,10 @@ class SignDetector(Node):
             share_dir = get_package_share_directory(package_name)
 
             #PATHS DE LAS IMAGENES
-            path_stop = os.path.join(share_dir, 'templates', 'stop.png')
-            path_ceda = os.path.join(share_dir, 'templates', 'yield.png')
-            path_vel = os.path.join(share_dir, 'templates', 'speed.png')
-
+            path_stop = "templates/speed.png"
+            path_ceda = "templates/yield.png"
+            path_vel = "templates/stop.png"
+            
             template_stop = cv2.imread(path_stop, cv2.IMREAD_COLOR)
             template_ceda = cv2.imread(path_ceda, cv2.IMREAD_COLOR)
             template_vel = cv2.imread(path_vel, cv2.IMREAD_COLOR)
