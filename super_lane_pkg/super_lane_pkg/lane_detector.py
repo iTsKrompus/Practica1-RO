@@ -24,7 +24,7 @@ class LaneDetector(Node):
         self.error_pub = self.create_publisher(Int32, '/lane_error', 10)
         self.bridge = CvBridge()
 #Valor umbral de confianza
-        self.LINE_THRESHOLD = 150.0
+        self.LINE_THRESHOLD = 170.0
 
         self.get_logger().info('LaneDetector iniciado, esperando imágenes en /car/road_camera/image_color')
 
