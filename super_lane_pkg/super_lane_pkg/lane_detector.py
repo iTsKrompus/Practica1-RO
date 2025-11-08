@@ -46,7 +46,7 @@ class LaneDetector(Node):
         error = int(center_index - 256)                # <-- int Python nativo
 
          #self.get_logger().info(f'Centro detectado: {center_index}, Error de carril: {error}')
-        self.error_pub.publish(Int32(data=error))
+        self.error_pub.publish(Int32(data=-error))
 
 def main(args=None):
     rclpy.init(args=args)
