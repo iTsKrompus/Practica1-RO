@@ -48,12 +48,10 @@ class SignDetector(Node):
     def load_templates(self):
         try:
             package_name = 'super_lane_pkg' # CAMBIAR ESTO SI CAMBIAMOS EL NOMBRE DEL PAQUETE
-            share_dir = get_package_share_directory(package_name)
-
             #PATHS DE LAS IMAGENES
-            path_stop = "templates/speed.png"
+            path_stop = "templates/stop.png"
             path_ceda = "templates/yield.png"
-            path_vel = "templates/stop.png"
+            path_vel = "templates/speed.png"
             
             template_stop = cv2.imread(path_stop, cv2.IMREAD_COLOR)
             template_ceda = cv2.imread(path_ceda, cv2.IMREAD_COLOR)

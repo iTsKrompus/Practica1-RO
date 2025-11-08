@@ -61,13 +61,11 @@ class MyRobotDriver:
 
         self.__rear_left_motor.setPosition(float('inf'))
         self.__rear_right_motor.setPosition(float('inf'))
-        self.__front_left_motor.setPosition(float('inf'))
-        self.__front_right_motor.setPosition(float('inf'))
 
         self.__rear_left_motor.setVelocity(0)
         self.__rear_right_motor.setVelocity(0)
-        self.__front_left_motor.setVelocity(0)
-        self.__front_right_motor.setVelocity(0)
+        self.__front_left_motor.setPosition(0)
+        self.__front_right_motor.setPosition(0)
 
 
         # --- Cámaras ---
@@ -108,8 +106,8 @@ class MyRobotDriver:
         #self.__rear_left_motor.setVelocity(target_velocity)
         #self.__rear_right_motor.setVelocity(target_velocity)
 
-        self.__front_left_motor.setVelocity(target_velocity)
-        self.__front_right_motor.setVelocity(target_velocity)
+        self.__rear_left_motor.setVelocity(target_velocity)
+        self.__rear_right_motor.setVelocity(target_velocity)
 
         steering_angle = w * STEERING_K
         steering_angle = max(-MAX_STEERING_ANGLE, min(steering_angle, MAX_STEERING_ANGLE))
