@@ -49,7 +49,7 @@ class LaneController(Node):
         angular = -(prop + int_term + derivative)
 
         twist = Twist()
-        twist.linear.x = 10.0  # 🚨 VELOCIDAD FIJADA A 10.0
+        twist.linear.x = 20.0  # 🚨 VELOCIDAD FIJADA A 10.0
         twist.angular.z = angular
         
         self.cmd_pub.publish(twist)

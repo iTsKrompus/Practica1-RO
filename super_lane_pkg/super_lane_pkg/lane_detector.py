@@ -23,6 +23,9 @@ class LaneDetector(Node):
         )
         self.error_pub = self.create_publisher(Int32, '/lane_error', 10)
         self.bridge = CvBridge()
+#Valor umbral de confianza
+        self.LINE_THRESHOLD = 150.0
+
         self.get_logger().info('LaneDetector iniciado, esperando imágenes en /car/road_camera/image_color')
 
     def image_callback(self, msg):
@@ -40,10 +43,19 @@ class LaneDetector(Node):
         # Asegurarse de la forma esperada (height, width, channels)
         self.get_logger().debug(f'Imagen recibida shape={getattr(img, "shape", None)} dtype={getattr(img, "dtype", None)}')
 
+        
         # Media por columna sobre filas (axis=0) y canales (axis=2) -> vector de width valores
         column_means = np.mean(img, axis=(0, 2))
-        center_index = int(np.argmax(column_means))    # <-- convertir a int Python nativo
-        error = int(center_index - 256)                # <-- int Python nativo
+
+        max_brightness = np.max(column_means)
+
+        if max_brightness < self.LINE_THRESHOLD:
+            error = 0
+            self.get_logger().warn(f'No se detecta línea (Brillo max: {max_brightness:.1f}). Yendo recto.')
+        else:
+            center_index = int(np.argmax(column_means))    # <-- convertir a int Python nativo
+            error = int(center_index - 256)       
+            self.get_logger().info(f'Línea detectada (Brillo max: {max_brightness:.1f}). Error: {error}')
 
          #self.get_logger().info(f'Centro detectado: {center_index}, Error de carril: {error}')
         self.error_pub.publish(Int32(data=-error))
