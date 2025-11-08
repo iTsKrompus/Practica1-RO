@@ -22,8 +22,8 @@ class MyRobotDriver:
         self.__node.get_logger().info('Driver C-Zero (4 Ruedas) INICIADO CORRECTAMENTE')
 
         # --- Cámaras ---
-        self.__road_camera = self._get_device_or_crash('road_camera') 
-        self.__car_camera = self._get_device_or_crash('car_camera')   
+        self.__road_camera = self.__robot.getDevice('road_camera') 
+        self.__car_camera = self.__robot.getDevice('car_camera')   
        
         self.__road_camera.enable(time_step)
         self.__car_camera.enable(time_step)
