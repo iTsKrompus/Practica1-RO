@@ -24,6 +24,7 @@ def generate_launch_description():
     my_robot_driver = WebotsController(
         robot_name='car',
 
+        
         parameters=[
             {'robot_description': robot_description_path},
         ]

@@ -46,11 +46,12 @@ class MyRobotDriver:
     def step(self):
         rclpy.spin_once(self.__node, timeout_sec=0)
         v = self.__target_twist.linear.x
+        desired_angle = self.__target_twist.angular.z
         
-        steering_angle = self.__target_twist.angular.z
+        steering_angle = max(-MAX_STEERING_ANGLE, min(desired_angle, MAX_STEERING_ANGLE))
 
-        #Linea para debuggear
-        self.__node.get_logger().info(f'API car: Velocidad={v:.2f} m/s, Angulo={steering_angle:.2f} rad')
+        # 3. Línea para debuggear (mejorada)
+        self.__node.get_logger().info(f'API car: Velocidad={v:.2f} m/s, Angulo Solicitado={desired_angle:.2f} rad, Angulo Aplicado={steering_angle:.2f} rad')
 
         self.__robot.setCruisingSpeed(v)
         self.__robot.setSteeringAngle(steering_angle)
