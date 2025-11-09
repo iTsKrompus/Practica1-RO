@@ -29,7 +29,7 @@ class LaneController(Node):
         )
 
         # --- Controlador PID (de tu código) ---
-        self.Kp = 0.001
+        self.Kp = 0.004
         self.Ki = 0.0
         self.Kd = 0.005
         self.integral = 0.0
