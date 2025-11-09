@@ -39,28 +39,25 @@ def generate_launch_description():
     )
 
 
-
-    # Nodo de control
     lane_controller = Node(
         package='super_lane_pkg',
         executable='lane_controller',
         name='lane_controller',
         output='screen'
     )
-
-    # Nodo de percepción de señales
-    signal_det = Node(
+    sign_detector = Node(
         package='super_lane_pkg',
-        executable='signal_det',
-        name='signal_det',
+        executable='sign_detector',
+        name='sign_detector',
         output='screen'
     )
+
     return LaunchDescription([
         webots,
         my_robot_driver,
         lane_detector,
         lane_controller,
-        signal_det,
+        sign_detector,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

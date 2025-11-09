@@ -38,6 +38,7 @@ class MyRobotDriver:
         # --- Configuracion inicial con la API webots ---
         self.__robot.setCruisingSpeed(0.0)
         self.__robot.setSteeringAngle(0.0)
+        
         self.__node.get_logger().info('API "Car" inicializada  en 0.0 m/s y 0.0 rad.')
 
     def __cmd_vel_callback(self, twist):
@@ -51,7 +52,7 @@ class MyRobotDriver:
         steering_angle = max(-MAX_STEERING_ANGLE, min(desired_angle, MAX_STEERING_ANGLE))
 
         # 3. Línea para debuggear (mejorada)
-        self.__node.get_logger().info(f'API car: Velocidad={v:.2f} m/s, Angulo Solicitado={desired_angle:.2f} rad, Angulo Aplicado={steering_angle:.2f} rad')
+        #self.__node.get_logger().info(f'API car: Velocidad={v:.2f} m/s, Angulo Solicitado={desired_angle:.2f} rad, Angulo Aplicado={steering_angle:.2f} rad')
 
         self.__robot.setCruisingSpeed(v)
         self.__robot.setSteeringAngle(steering_angle)
