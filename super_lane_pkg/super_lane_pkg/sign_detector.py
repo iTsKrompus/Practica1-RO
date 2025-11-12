@@ -8,17 +8,15 @@ from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 import cv2
 import os
 
-# 1. --- Imports AÑADIDOS ---
 from ament_index_python.packages import get_package_share_directory
-from std_msgs.msg import Float32 # 👈 Importar para publicar la velocidad
+from std_msgs.msg import Float32 
 
 class SignDetector(Node):
     def __init__(self):
         super().__init__('sign_det')
 
-        # --- Parámetros de Velocidad ---
-        self.MAX_SPEED = 25.0  # (Debe coincidir con el LaneController)
-        self.YIELD_SPEED = self.MAX_SPEED/2 # (Mitad de velocidad)
+        self.MAX_SPEED = 30.0  # En m/s
+        self.YIELD_SPEED = self.MAX_SPEED/2
         self.STOP_DURATION = 6.0
         self.STOP_SPEED = 0.001
         
@@ -37,7 +35,6 @@ class SignDetector(Node):
             qos
         )
         
-        # 2. --- NUEVO PUBLICADOR de Velocidad ---
         self.speed_pub = self.create_publisher(Float32, '/speed_command', 10)
 
         self.bridge = CvBridge()
@@ -49,12 +46,10 @@ class SignDetector(Node):
 
 
     def load_templates(self):
-        """Carga las plantillas de señales desde los archivos."""
         try:
             package_name = 'super_lane_pkg'
             share_dir = get_package_share_directory(package_name)
 
-            # 3. --- RUTAS CORREGIDAS (Usando el path absoluto) ---
             path_stop = os.path.join(share_dir, 'templates', 'stop.png')
             path_ceda = os.path.join(share_dir, 'templates', 'yield.png')
             path_vel = os.path.join(share_dir, 'templates', 'speed.png')
@@ -104,7 +99,6 @@ class SignDetector(Node):
                 max_confidence = max_val
                 detected_sign = name
 
-        # 4. --- LÓGICA DE PUBLICACIÓN DE VELOCIDAD ---
         speed_msg = Float32()
 
         if detected_sign == "STOP":
@@ -126,11 +120,10 @@ class SignDetector(Node):
             speed_msg.data = self.MAX_SPEED
             self.speed_pub.publish(speed_msg)
         
-        # (Si no detecta nada, no publica nada, y el LaneController
-        # mantendrá la última velocidad que tuviera)
+
 
     def on_stop_timer_complete(self):
-        """Se llama 1 segundo después de ver un STOP."""
+
         self.get_logger().warn("1 segundo completado. Reanudando marcha.")
         self.is_stopped = False
         

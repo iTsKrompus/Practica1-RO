@@ -9,13 +9,10 @@ from webots_ros2_driver.webots_controller import WebotsController
 def generate_launch_description():
     package_dir = get_package_share_directory('super_lane_pkg')
 
-    # Ruta al URDF del coche
     robot_description_path = os.path.join(package_dir, 'resource', 'CitroenCZero.urdf')
 
-    # Ruta al mundo de Webots
     world_path = os.path.join(package_dir, 'worlds', 'city_traffic.wbt')
 
-    # Lanzador de Webots con el mundo
     webots = WebotsLauncher(
         world=world_path
     )
@@ -30,7 +27,7 @@ def generate_launch_description():
         ]
     )
 
-    # Nodo de percepción
+    
     lane_detector = Node(
         package='super_lane_pkg',
         executable='lane_detector',
