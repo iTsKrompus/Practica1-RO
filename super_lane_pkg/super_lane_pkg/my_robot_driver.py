@@ -3,10 +3,7 @@ from geometry_msgs.msg import Twist
 import math 
 
 
-WHEEL_RADIUS = 0.28675      
 MAX_STEERING_ANGLE = 0.631  
-STEERING_K = 0.5            
-MAX_WHEEL_VELOCITY = 35.0   
 
 class MyRobotDriver:
     def init(self, webots_node, properties):
