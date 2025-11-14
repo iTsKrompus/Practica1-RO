@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <robot name = "car">
   <webots>
-      <plugin type="super_lane_pkg.my_robot_driver.MyRobotDriver" />
+      <plugin type="car_pkg.my_robot_driver.MyRobotDriver" />
   </webots>
 </robot>

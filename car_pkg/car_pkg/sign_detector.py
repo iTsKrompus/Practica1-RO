@@ -47,7 +47,7 @@ class SignDetector(Node):
 
     def load_templates(self):
         try:
-            package_name = 'super_lane_pkg'
+            package_name = 'car_pkg'
             share_dir = get_package_share_directory(package_name)
 
             path_stop = os.path.join(share_dir, 'templates', 'stop.png')
