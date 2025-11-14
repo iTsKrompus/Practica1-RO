@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'super_lane_pkg'
+package_name = 'car_pkg'
 
 setup(
     name=package_name,
@@ -11,7 +11,7 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]), 
-            ('share/super_lane_pkg/launch', ['launch/super_lane.launch.py']),
+            ('share/car_pkg/launch', ['launch/launch.py']),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/resource', ['resource/CitroenCZero.urdf']),
         ('share/' + package_name + '/worlds', ['worlds/city_traffic.wbt']),
@@ -34,10 +34,10 @@ setup(
     entry_points={
         'console_scripts': [
             
-            'my_robot_driver = super_lane_pkg.my_robot_driver:main', 
-            'lane_detector = super_lane_pkg.lane_detector:main',
-            'lane_controller = super_lane_pkg.lane_controller:main',
-            'sign_detector = super_lane_pkg.sign_detector:main',
+            'my_robot_driver = car_pkg.my_robot_driver:main', 
+            'lane_detector = car_pkg.lane_detector:main',
+            'lane_controller = car_pkg.lane_controller:main',
+            'sign_detector = car_pkg.sign_detector:main',
             
         ],
     },

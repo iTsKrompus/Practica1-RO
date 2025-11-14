@@ -7,7 +7,7 @@ from webots_ros2_driver.webots_launcher import WebotsLauncher
 from webots_ros2_driver.webots_controller import WebotsController
 
 def generate_launch_description():
-    package_dir = get_package_share_directory('super_lane_pkg')
+    package_dir = get_package_share_directory('car_pkg')
 
     robot_description_path = os.path.join(package_dir, 'resource', 'CitroenCZero.urdf')
 
@@ -29,7 +29,7 @@ def generate_launch_description():
 
     
     lane_detector = Node(
-        package='super_lane_pkg',
+        package='car_pkg',
         executable='lane_detector',
         name='lane_detector',
         output='screen'
@@ -37,13 +37,13 @@ def generate_launch_description():
 
 
     lane_controller = Node(
-        package='super_lane_pkg',
+        package='car_pkg',
         executable='lane_controller',
         name='lane_controller',
         output='screen'
     )
     sign_detector = Node(
-        package='super_lane_pkg',
+        package='car_pkg',
         executable='sign_detector',
         name='sign_detector',
         output='screen'
